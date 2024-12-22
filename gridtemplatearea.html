@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div class="container">
+            <div class="item1">item value 1
+                <div class="searchbar"><span class="list1">products1</span><span class="list2">products2</span><span class="list3">products3</span><span class="list4">products4</span></div>
+              <div class="item2">item value 2</div>
+            <div class="item3 container1">
+              <div class="mainItem1">item value 1</div>
+              <div class="mainItem2">item value 2</div>
+              <div class="mainItem3">item value 3</div>
+              <div class="mainItem4">item value 4</div>
+              <div class="mainItem5">item value 5</div>
+              <div class="mainItem6">item value 6</div>
+              <div class="mainItem7">item value 7</div>
+              <div class="mainItem8">item value 8</div>
+
+        </div>        
+<script src="" async defer></script>
+    </body>
+    <style>
+        body{
+            background-color: white;
+            border:10px solid grey;
+        }
+        .container{
+            font-size: 16px;
+            height: 100vh;
+            display: grid;
+            grid-template-areas:
+                'item1 item1 item1'
+                'item2 item3 item3'
+                'item2 item3 item3';
+                
+        }
+        .container1{
+            font-size:16px;
+            height:100vh;
+            display:grid;
+            grid-template-areas:
+            'mainItem1 mainItem1 mainItem3 mainItem4'
+            'mainItem2 mainItem2 mainItem3 mainItem4'
+            'mainItem5 mainItem5 mainItem6 mainItem6'
+            'mainItem7 mainItem7 mainItem8 mainItem8';
+           }
+        
+    .container1>div{
+        
+        color:black; 
+        padding:20px;
+        border: 5px solid red
+    }
+
+    .mainItem1{
+        grid-area:mainItem1;
+    }
+    .mainItem2{
+        grid-area:mainItem2;
+    }
+    .mainItem3{
+        grid-area:mainItem3;
+
+    }
+    .mainItem4{
+        grid-area:mainItem4;
+    }
+    .mainItem5{
+        grid-area:mainItem5;
+    }
+    .mainItem6{
+        grid-area:mainItem6;
+    }
+    .mainItem7{
+        grid-area:mainItem7;
+    }
+    .mainItem8{
+        grid-area:mainItem8;
+    }
+
+    .item1, .item2, .item3{
+            color: black;
+            padding: 20px;
+            border:2px solid grey;
+     }
+    
+        .item1 {
+            grid-area: item1;
+        }
+    
+        .item2{
+            grid-area: item2;
+        }
+    
+        .item3 {
+            grid-area: item3;
+        }
+    
+
+</style>
+</html>
