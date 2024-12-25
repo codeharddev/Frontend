@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+
+        <header>Searchbar</header>
+        <nav>sidebar</nav>
+        <main>content</main>
+    </body>
+    <style>
+        body{
+            font-size:16px;
+            height:100vh;
+            display:grid;
+            grid-template-areas:
+            'searchbar searchbar searchbar'
+            'sidebar content content'
+            'sidebar content content';
+        }
+        header,
+        main,
+        nav{
+            background-color:aqua;
+            color:white;
+            padding:20px;
+            border:10px solid grey;
+        }
+        header{
+            grid-area:searchbar;
+        
+        }
+        nav{
+            grid-area:sidebar;
+        }
+        main{
+            grid-area:content;
+        }
+    </style>
+
+
+</body>
+</html>

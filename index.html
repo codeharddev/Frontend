@@ -1,1 +1,201 @@
-test file
+<!DOCTYPE html>
+<head>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+
+
+</head>
+<body>
+    
+    <div class="container">
+    <div class="item1">searchStatus
+         <div class="list-group">
+            <a class="list-group-item" href="#"><i class="fa fa-search" aria-hidden="true"></i>&nbsp; search</a>
+            <a class="list-group-item" href="#"><i class="fa fa-inr" aria-hidden="true"></i>&nbsp; Home</a>
+            <a class="list-group-item" href="#"><i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp; Library</a>
+            <a class="list-group-item" href="#"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; Applications</a>
+            <a class="list-group-item" href="#"><i class="fa fa-cog fa-fw" aria-hidden="true"></i>&nbsp; Settings</a>
+          </div>
+    </div>
+    <div class="item2">
+    <div class="nav">
+        <ul>
+            <li class="image1">newIn</li>
+            <li class="image2">clothing</li>
+            <li class="image3">shoes</li>
+            <li class="image4">accessories</li>
+            <li class="image5">activewear</li>
+            <li class="image6">giftsandliving</li>
+            <li class="image7">inspiration</li>
+            
+        </ul>
+       
+    </div>
+    </div>
+    <div class="item3">
+        <div class="itemvalue1 identicalItem1">
+            <img src="C:\Users\lavan\Downloads\beautiful-shot-lake-surrounded-by-trees-with-hills.jpg">
+        </div>
+        <div class="itemvalue2 identicalItem1">
+            <img img src="C:\Users\lavan\Downloads\beautiful-shot-lake-surrounded-by-trees-with-hills.jpg">
+        </div>
+        <div class="itemvalue3 identicalItem2">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp">
+            </div>
+        <div class="itemvalue4 identicalItem2">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp">
+        </div>
+        <div class="itemvalue5 identicalItem2">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp">
+        </div>
+        <div class="itemvalue6 identicalItem2">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp">
+        </div>
+        <div class="itemvalue7 identicalItem1">
+            <img img src="C:\Users\lavan\Downloads\beautiful-shot-lake-surrounded-by-trees-with-hills.jpg">
+        </div>
+        <div class="itemvalue8 identicalItem1">
+            <img img src="C:\Users\lavan\Downloads\beautiful-shot-lake-surrounded-by-trees-with-hills.jpg">
+        </div>
+  </div>
+</div>
+
+</body>
+<style>
+    body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: blue;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor:pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+    
+    .container{
+        background-color:grey;
+        border:5px solid grey;
+        height:100vh;
+        color:black;
+        display:grid;
+        grid-template-areas:
+        'item1 item1 item1'
+        'item2 item3 item3'
+        'item2 item3 item3';
+    }
+
+    .item3{
+        height:20vh;
+        border:5px solid grey;
+        display:grid;
+        grid-template-areas:
+        'itemvalue1 itemvalue1 itemvalue3 itemvalue4'
+        'itemvalue2 itemvalue2 itemvalue3 itemvalue4'
+        'itemvalue5 itemvalue6 itemvalue7 itemvalue7'
+        'itemvalue5 itemvalue6 itemvalue8 itemvalue8';
+
+        .identicalItem1>img {
+            max-height: 200px;
+            width: 100%;
+        }
+        .identicalItem2>img {
+            height:100%;
+            width: 70%;
+        }
+     }
+    .item3>div{
+        background-color:pink;
+        border:5px solid grey;
+
+    }
+    .itemvalue1{
+        grid-area:itemvalue1;
+    }
+    .itemvalue2{
+        grid-area:itemvalue2;
+    }
+    .itemvalue3{
+        grid-area:itemvalue3;
+    }
+    .itemvalue4{
+        grid-area:itemvalue4;
+    }
+    .itemvalue5{
+        grid-area:itemvalue5;
+    }
+    .itemvalue6{
+        grid-area:itemvalue6;
+    }
+    .itemvalue7{
+        grid-area:itemvalue7;
+    }
+    .itemvalue8{
+        grid-area:itemvalue8;
+    }
+
+
+    .flex-container{
+        background-color:grey;
+        display:flex;
+    }
+    .flex-container>div{
+        margin:10px;
+        padding:20px;
+        background-color:pink;
+        border:5px solid grey;
+        font-size:30px;
+
+    }
+    .item2{
+        background-color:pink;
+        height:100vh;
+        border:5px solid grey;
+    }
+    .item3{
+        background-color:pink;
+        border:5px solid grey;
+        height:100vh;
+    }
+    .item1{
+        grid-area:item1;
+    }
+    .item2{
+        grid-area:item2;
+    }
+    .item3{
+        grid-area:item3;
+    }
+    
+ </style>
+ </html>
